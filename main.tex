@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Divik Chotani} \\ \vspace{1pt}
+    \small 408-726-2484 $|$ \href{mailto:divikchotani@g.ucla.edu}{\underline{divikchotani@g.ucla.edu}} $|$ 
+    \href{https://www.linkedin.com/in/divik-chotani-8b3585242/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/DivikChotani}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    % Swap to: position=degree, date=duration, institution, location
+    \resumeSubheading
+      {Bachelor of Engineering in Computer Science}{Oct. 2023 -- June 2027}
+      {University of California, Los Angeles}{Los Angeles, CA}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Mar. 2025 -- Present}
+      {UCLA}{Los Angeles, CA}
+    \resumeItemListStart
+      \resumeItem{Worked in Python on the \href{https://github.com/binpash}{\underline{/bin/pash}} project (5k+ stars) to parallelize shell scripts and improve runtime.}
+      \resumeItem{Developed a library in Python and Bash to implement parallel versions of common shell commands like \texttt{ls} and \texttt{cat}.}\resumeItem{Created an eBPF program in C, C++, and Rust to monitor system calls, interrupts, and network packets on Linux, enabling dependency tracking and file access auditing.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Sep. 2024 -- Jan. 2025}
+      {Validia}{San Francisco, CA}
+    \resumeItemListStart
+      \resumeItem{Developed a Chrome extension using React and Node.js to protect websites via facial authentication.}
+      \resumeItem{Created a web app in raw HTML, CSS, and JavaScript with a Flask backend to detect deepfake videos in interviews.}
+      \resumeItem{Boosted audio deepfake detection accuracy by 20\% (measured on 1,000+ audio samples) using PyTorch.}
+      \resumeItem{Implemented a Fast Fourier Transform (FFT) to extract frequency-domain features from audio clips, improving detection performance.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{June 2024 -- Sept. 2024 \& June 2025 -- Sept. 2025}{Pixii AI}{Boston, MA}
+    \resumeItemListStart
+      \resumeItem{June 2024 -- Sept. 2024: Developed a Slackbot with Nest.js and PostgreSQL to generate 30 days of AI-powered ad content in under 30 seconds, automating marketing across 50+ social media accounts.}
+      \resumeItem{June 2025 -- Sept. 2025: Built a social media scheduler in TypeScript using React, Nest.js, and Docker to plan and publish posts, greatly reducing manual marketing workload.}
+      \resumeItem{June 2025 -- Sept. 2025: Implemented a usage tracker with PostHog, Next.js, and Node.js to analyze user behavior and inform UI improvements, boosting user return rate to 24\%.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Co-op Minesweeper} $|$ \emph{TypeScript, Node.js, React, PostgreSQL, Docker}}{June 2024 -- Dec. 2024}
+    \resumeItemListStart
+      \resumeItem{Developed a full-stack web application with Node.js serving a REST API and React frontend for seamless gameplay and user management.}
+      \resumeItem{Implemented secure authentication with hashed and salted passwords; integrated a PostgreSQL database to store user profiles, scores, and game history.}
+      \resumeItem{Leveraged Socket.io to enable real-time multiplayer functionality, allowing multiple players to collaborate on the same Minesweeper board with instant updates.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Amazon and Shopify Listing Grader} $|$ \emph{TypeScript, Node.js, React, SQLite3}}{June 2025 -- Sept. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a web app and embedded Shopify app to evaluate and score product listings across Amazon and Shopify.}
+      \resumeItem{Created a responsive React frontend to present AI-powered reviews and detailed grading of each product listing element.}
+      \resumeItem{Implemented a Node.js and Prisma backend with SQLite3 caching to reduce API calls and improve response times.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++/C\#, SQL, JavaScript, HTML/CSS, Rust, Go, BPF} \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, Flask, WordPress, Material-UI, Tailwind, FastAPI, Vue.js, Svelte, Angular, Django, .NET, Spring Boot} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, MongoDB, Redis, DynamoDB, GraphQL, bpftool} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, scikit-learn, PyTorch, libbpf, linux-headers, Axios, Vite, TypeORM, Socket.io}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
+
