@@ -116,13 +116,14 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Undergraduate Research Assistant}{Mar. 2025 -- Present}
-      {UCLA}{Los Angeles, CA}
-    \resumeItemListStart
-      \resumeItem{Worked in Python on the \href{https://github.com/binpash}{\underline{/bin/pash}} project (5k+ stars) to parallelize shell scripts and improve runtime.}
-      \resumeItem{Developed a library in Python and Bash to implement parallel versions of common shell commands like \texttt{ls} and \texttt{cat}.}\resumeItem{Created an eBPF program in C, C++, and Rust to monitor system calls, interrupts, and network packets on Linux, enabling dependency tracking and file access auditing.}
-    \resumeItemListEnd
+ \resumeSubheading
+  {Undergraduate Research Assistant}{Mar. 2025 -- Present}
+  {UCLA, Samueli School of Engineering}{Los Angeles, CA}
+\resumeItemListStart
+  \resumeItem{Contributed to the open-source \href{https://github.com/binpash/pash}{\underline{PaSh}} project (500+ stars, hosted by the Linux Foundation), by implementing parallel versions of core POSIX commands and submitting enhancements to its compiler optimization passes.}
+  \resumeItem{Actively maintained PaSh’s open-source \href{https://github.com/binpash/annotations}{\underline{annotations}} library, extending its semantics and dependency-tracking capabilities to allow users to parallelize their own custom commands while maintaining correctness.}
+  \resumeItem{Created an eBPF program in C, C++, and Rust to monitor system calls, interrupts, and network packets on Linux, enabling dependency tracking and file access auditing.}
+\resumeItemListEnd
 
     \resumeSubheading
       {Software Engineering Intern}{Sep. 2024 -- Jan. 2025}
@@ -146,29 +147,38 @@
 
 %-----------PROJECTS-----------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Co-op Minesweeper} $|$ \emph{TypeScript, Node.js, React, PostgreSQL, Docker}}{June 2024 -- Dec. 2024}
-    \resumeItemListStart
-      \resumeItem{Developed a full-stack web application with Node.js serving a REST API and React frontend for seamless gameplay and user management.}
-      \resumeItem{Implemented secure authentication with hashed and salted passwords; integrated a PostgreSQL database to store user profiles, scores, and game history.}
-      \resumeItem{Leveraged Socket.io to enable real-time multiplayer functionality, allowing multiple players to collaborate on the same Minesweeper board with instant updates.}
-    \resumeItemListEnd
+\resumeSubHeadingListStart
 
-    \resumeProjectHeading
-      {\textbf{Amazon and Shopify Listing Grader} $|$ \emph{TypeScript, Node.js, React, SQLite3}}{June 2025 -- Sept. 2025}
-    \resumeItemListStart
-      \resumeItem{Built a web app and embedded Shopify app to evaluate and score product listings across Amazon and Shopify.}
-      \resumeItem{Created a responsive React frontend to present AI-powered reviews and detailed grading of each product listing element.}
-      \resumeItem{Implemented a Node.js and Prisma backend with SQLite3 caching to reduce API calls and improve response times.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeProjectHeading
+{\begin{tabular}[t]{@{}l@{}}%
+  \textbf{Co-op Minesweeper} $|$ \emph{TypeScript, Node.js, React, PostgreSQL, Docker} \\
+  \href{https://coopminesweeper.netlify.app/game}{\underline{Link to the website}}%
+\end{tabular}}{June 2024 -- Dec. 2024}
+\resumeItemListStart
+  \resumeItem{Developed a full-stack web application with Node.js serving a REST API and React frontend for seamless gameplay and user management.}
+  \resumeItem{Implemented secure authentication with hashed and salted passwords; integrated a PostgreSQL database to store user profiles, scores, and game history.}
+  \resumeItem{Leveraged Socket.io to enable real-time multiplayer functionality, allowing multiple players to collaborate on the same Minesweeper board with instant updates.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\begin{tabular}[t]{@{}l@{}}%
+  \textbf{Amazon Listing Grader} $|$ \emph{TypeScript, Node.js, React, SQLite3} \\
+  \href{https://main.d26yxwj97blw7k.amplifyapp.com/}{\underline{Link to project website}}%
+\end{tabular}}{June 2025 -- Sept. 2025}
+\resumeItemListStart
+  \resumeItem{Built a web app to evaluate and score product listings for any Amazon product where a user inputs a product url and the website scores the product listing and provides insight on how to improve listing.}
+  \resumeItem{Created a responsive React frontend to present AI-powered reviews and suggestions, as well detailed analysis.}
+  \resumeItem{Implemented a Node.js backend with Postgres and deployed via AWS Amplify to allow for continuous deployment and API Gateway for  communication between the frontend and backend.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++/C\#, SQL, JavaScript, HTML/CSS, Rust, Go, BPF} \\
+     \textbf{Languages}{: Java, Python, C/C++/C\#, SQL, JavaScript, HTML/CSS, Rust, Go, BPF, Swift, Kotlin} \\
      \textbf{Frameworks}{: React, Next.js, Node.js, Flask, WordPress, Material-UI, Tailwind, FastAPI, Vue.js, Svelte, Angular, Django, .NET, Spring Boot} \\
      \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, MongoDB, Redis, DynamoDB, GraphQL, bpftool} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, scikit-learn, PyTorch, libbpf, linux-headers, Axios, Vite, TypeORM, Socket.io}
@@ -177,4 +187,3 @@
 
 %-------------------------------------------
 \end{document}
-
